@@ -12,17 +12,20 @@
     <div class="container">
       <header class="page-header page-header-catalog">
         <nav class="navigation">
-          <a class="navigation-logo" href="#">
+          <a class="navigation-logo" href="index.html">
             <img src="images/header/logo.svg" width="137" height="56" alt="Логотип gllacy.">
           </a>
           <ul class="navigation-list">
             <li class="navigation-item navigation-item-popover">
               <a class="navigation-link navigation-link-current" href="catalog.html">Каталог</a>
+              <!-- к div catalog-popover добавить класс active для появления поповера -->
               <div class="catalog-popover">
-                <h2 class="catalog-popover-title">
-                  Новинки
-                </h2>
                 <ul class="catalog-popover-list">
+                  <li class="catalog-popover-item catalog-popover-item-new">
+                    <a class="catalog-popover-link catalog-popover-link-new" href="#">
+                      Новинки
+                    </a>
+                  </li>
                   <li class="catalog-popover-item">
                     <a class="catalog-popover-link" href="catalog.html">
                       Сливочное
@@ -55,7 +58,7 @@
           </ul>
           <ul class="navigation-user">
             <li class="navigation-user-item">
-              <a class="navigation-contacts" href="tel:+7800555-86-28">+7 800 555-86-28</a>
+              <a class="navigation-contacts" href="tel:+78005558628">+7 800 555-86-28</a>
             </li>
             <li class="navigation-user-item navigation-user-search">
               <a class="navigation-user-link navigation-user-link-search" href="#">
@@ -67,17 +70,25 @@
                 </svg>
                 <span class="visually-hidden">Поиск</span>
               </a>
-              <!-- к div search-popover добавить класс activ для появления поповера -->
+              <!-- к div search-popover добавить класс active для появления поповера -->
               <div class="search-popover">
                 <form class="form-search-popover" action="https://echo.htmlacademy.ru" method="post">
                   <label class="visually-hidden">
                     Поиск
                   </label>
                   <input class="input-search-popover" type="text" placeholder="Поиск по сайту">
+                  <button class="search-popover-reset" type="reset">
+                    <svg class="search-popover-reset-icon" aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.8 1.14A.67.67 0 1 0 8.86.2L5 4.06 1.14.2a.67.67 0 1 0-.94.94L4.06 5 .2 8.86a.67.67 0 0 0 .94.94L5 5.94 8.86 9.8a.67.67 0 1 0 .94-.94L5.94 5 9.8 1.14Z"
+                        fill="#2D3440" />
+                    </svg>
+                    <span class="visually-hidden">Кнопка для очистки введенного текста</span>
+                  </button>
                 </form>
               </div>
             </li>
-
             <li class="navigation-user-item navigation-user-item-exit">
               <a class="navigation-user-link navigation-user-link-exit" href="#">
                 <svg class="exit" aria-hidden="true" focusable="false" width="14" height="15" viewBox="0 0 14 15"
@@ -88,7 +99,7 @@
                 </svg>
                 <span class="enter-text">Вход</span>
               </a>
-              <!-- к div exit-popover добавить класс activ для появления поповера -->
+              <!-- к div exit-popover добавить класс active для появления поповера -->
               <div class="exit-popover">
                 <h2 class="exit-popover-title">
                   Личный кабинет
@@ -96,12 +107,13 @@
                 <form class="exit-popover-form" action="https://echo.htmlacademy.ru" method="post">
                   <div class="exit-popover-wrapper">
                     <label class="visually-hidden" for="popover-mail">Введите почту</label>
-                    <input class="exit-popover-input exit-popover-mail" id="popover-mail" name="popover-mail" type="text"
-                      placeholder="email@example.com" required>
+                    <input class="exit-popover-input exit-popover-mail" id="popover-mail" name="popover-mail"
+                      type="text" placeholder="email@example.com" required>
                   </div>
                   <div class="exit-popover-wrapper">
                     <label class="visually-hidden" for="popover-password">Введите пароль</label>
-                    <input class="exit-popover-input exit-popover-mail" id="popover-password" name="popover-password" type="password" required>
+                    <input class="exit-popover-input exit-popover-mail" id="popover-password" name="popover-password"
+                      type="password" value="111111" required>
                   </div>
                   <div class="exit-popover-container">
                     <button class="button exit-button">Войти</button>
@@ -109,16 +121,15 @@
                       <a href="#" class="exit-popover-link">
                         Забыли пароль?
                       </a>
-                      <a href="#" class="exit-popover-link">
+                      <a href="#" class="exit-popover-link exit-popover-link-register">
                         Регистрация
                       </a>
                     </div>
-
                   </div>
                 </form>
               </div>
             </li>
-            <li class="navigation-user-item">
+            <li class="navigation-user-item navigation-user-item-basket">
               <a class="navigation-user-link navigation-user-link-basket" href="#">
                 <svg class="basket" aria-hidden="true" focusable="false" width="15" height="14" viewBox="0 0 15 14"
                   fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -128,6 +139,66 @@
                 </svg>
                 <span class="basket-text">2 товара</span>
               </a>
+              <!-- к div basket-popover-products добавить класс active для появления поповера -->
+              <div class="basket-popover-products">
+                <h3 class="basket-popover-products-title">
+                  Корзина
+                </h3>
+                <ul class="basket-popover-products-list">
+                  <li class="basket-popover-products-item">
+                    <a href="catalog.html" class="basket-popover-products-link">
+                      <div class="basket-popover-products-image">
+                        <img class="popover-image" src="/images/popover/ice-1.jpg" width="46" height="46"
+                          alt="Мороженое малинка">
+                      </div>
+                      <div class="basket-popover-products-wrapper">
+                        <span class="popover-products-text">Малинка</span>
+                        <span class="popover-products-description-price">1 кг х 310 ₽</span>
+                      </div>
+                    </a>
+                    <span class="popover-products-price">310 ₽</span>
+                    <button class="basket-popover-products-button">
+                      <svg class="basket-popover-products-icon" aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M9.8 1.14A.67.67 0 1 0 8.86.2L5 4.06 1.14.2a.67.67 0 1 0-.94.94L4.06 5 .2 8.86a.67.67 0 0 0 .94.94L5 5.94 8.86 9.8a.67.67 0 1 0 .94-.94L5.94 5 9.8 1.14Z"
+                          fill="#2D3440" />
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                  <li class="basket-popover-products-item">
+                    <a href="catalog.html" class="basket-popover-products-link">
+                      <div class="basket-popover-products-image">
+                        <img class="popover-image" src="/images/popover/ice-2.jpg" width="46" height="46"
+                          alt="Мороженое бабл-гам">
+                      </div>
+                      <div class="basket-popover-products-wrapper basket-popover-products-wrapper-bubble">
+                        <span class="popover-products-text">Бабл-гам</span>
+                        <span class="popover-products-description-price">1,5 кг х 320 ₽</span>
+                      </div>
+                    </a>
+                    <span class="popover-products-price">480 ₽</span>
+                    <button class="basket-popover-products-button">
+                      <svg class="basket-popover-products-icon" aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M9.8 1.14A.67.67 0 1 0 8.86.2L5 4.06 1.14.2a.67.67 0 1 0-.94.94L4.06 5 .2 8.86a.67.67 0 0 0 .94.94L5 5.94 8.86 9.8a.67.67 0 1 0 .94-.94L5.94 5 9.8 1.14Z"
+                          fill="#2D3440" />
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+                <button class="basket-popover-products-design button">Оформить заказ
+                </button>
+                <span class="basket-popover-products-total-price">Итого: 790 ₽</span>
+              </div>
+              <!-- к div basket-popover-empty добавить класс active для появления поповера -->
+              <div class="basket-popover-empty">
+                <h3 class="basket-popover-title">
+                  Ваша корзина&nbsp;пока пуста
+                </h3>
+              </div>
             </li>
           </ul>
         </nav>
@@ -146,6 +217,7 @@
           <h2 class="breadcrumbs-title">Сливочное мороженое</h2>
         </header>
         <section class="catalod-filter">
+          <h2 class="visually-hidden">Сортировка</h2>
           <form class="catalod-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="catalod-wrapper">
               <fieldset class="catalod-filter-group">
@@ -536,7 +608,7 @@
             </li>
           </ul>
           <div class="popular-wrapper">
-            <button class="button popular-button-pagination">Показать еще</button>
+            <button class="button popular-button-pagination button-link">Показать еще</button>
             <div class="pagination-wrapper">
               <a href="#" class="pagination-link-button pagination-prev">
                 <span class="visually-hidden">Предыдущая страница</span>
