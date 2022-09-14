@@ -17,6 +17,7 @@
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
+              <!-- Для того, чтобы кнопка сталарозового цвета, нужно добавить класс current для a navigation-link -->
               <a class="navigation-link" href="catalog.html">Каталог</a>
             </li>
             <li class="navigation-item">
@@ -31,6 +32,7 @@
               <a class="navigation-contacts" href="tel:+78005558628">+7 800 555-86-28</a>
             </li>
             <li class="navigation-user-item navigation-user-search">
+              <!-- Для того, чтобы кнопка сталарозового цвета, нужно добавить класс current для a navigation-user-link -->
               <a class="navigation-user-link navigation-user-link-search" href="#">
                 <svg class="search" aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14"
                   fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -91,7 +93,7 @@
                       <a href="#" class="exit-popover-link">
                         Забыли пароль?
                       </a>
-                      <a href="#" class="exit-popover-link">
+                      <a href="#" class="exit-popover-link exit-popover-link-register">
                         Регистрация
                       </a>
                     </div>
@@ -166,11 +168,13 @@
                 <span class="basket-popover-products-total-price">Итого: 790 ₽</span>
               </div>
               <!-- к div basket-popover-empty добавить класс active для появления поповера -->
-              <div class="basket-popover-empty">
+              <!-- Раскоментировать basket-popover-empty и закоментировать basket-popover-products, чтобы появлялся поповер
+              Ваша корзина пока пуста -->
+              <!-- <div class="basket-popover-empty">
                 <h3 class="basket-popover-title">
                   Ваша корзина&nbsp;пока пуста
                 </h3>
-              </div>
+              </div> -->
             </li>
           </ul>
         </nav>
@@ -217,7 +221,7 @@
                   </h3>
                   <p class="slider-text">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет
                     сердца сладкоежек всех возрастов. </p>
-                  <a class="slider-link button button-link" href="#">Заказать</a>
+                  <a class="slider-link button"  href="#">Заказать</a>
                 </div>
                 <div class="slider-container-img">
                   <img class="slider-image" src="images/slider/ice-3.png" alt="Карамельный пломбир
@@ -227,8 +231,8 @@
             </ul>
             <div class="slider-controls">
               <button class="slider-controls-button slider-prev" type="button">
-                <svg class="slider-controls-icon slider-controls-icon-prev" aria-hidden="true" focusable="false" width="7" height="12"
-                  viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="slider-controls-icon slider-controls-icon-prev" aria-hidden="true" focusable="false"
+                  width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M5.86 11.14a.66.66 0 0 0 .95-.95L2.6 6l4.2-4.2a.67.67 0 0 0-.95-.94L1.2 5.52a.66.66 0 0 0 0 .94l4.66 4.68Z"
                     fill="currentColor" />
@@ -236,8 +240,8 @@
                 <span class="visually-hidden">Предыдущее фото </span>
               </button>
               <button class="slider-controls-button slider-next" type="button">
-                <svg class="slider-controls-icon slider-controls-icon-next" aria-hidden="true" focusable="false" width="7" height="12"
-                  viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="slider-controls-icon slider-controls-icon-next" aria-hidden="true" focusable="false"
+                  width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M1.14.86a.66.66 0 1 0-.95.95L4.4 6 .2 10.2a.67.67 0 0 0 .95.94L5.8 6.48a.66.66 0 0 0 0-.94L1.15.86Z"
                     fill="currentColor" />
@@ -309,14 +313,14 @@
               <p class="raspberry-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку
                 малинового варенья бесплатно.
               </p>
-              <a class="button order-link button-link" href="#">Хочу подарок</a>
+              <a class="button order-link" href="#">Хочу подарок</a>
             </div>
             <div class="marshmello">
               <h3 class="marshmello-title">Маршмеллоу даром!</h3>
               <p class="marshmello-text">При покупке 2 кг пломбира добавим в&nbsp;ваш заказ упаковку нежных <br> зефирок
                 совершенно бесплатно.
               </p>
-              <a class="button order-link button-link" href="#">Хочу подарок</a>
+              <a class="button order-link" href="#">Хочу подарок</a>
             </div>
           </div>
         </section>
@@ -377,8 +381,8 @@
               <h3 class="popular-item-title">
                 Черника
               </h3>
-              <p class="popular-item-text">Крем-брюле&nbsp;
-                с черничным джемом</p>
+              <p class="popular-item-text">Крем-брюле
+                с&nbsp;черничным джемом</p>
               <div class="popular-container">
                 <span class="popular-price">330 ₽/кг</span>
                 <button class="popular-button" type="button">
@@ -489,7 +493,7 @@
                       </svg>
                     </button>
                     <span class="tooltip-text" role="tooltip" id="tooltip-label-date">
-
+                      Введите дату
                     </span>
                   </span>
                   <input class="form-input" id="date-text" name="date-text" type="text" placeholder="01.04.2020"
@@ -514,15 +518,15 @@
                       </svg>
 
                     </button>
-                    <span class="tooltip-text" role="tooltip" id="tooltip-label-adress">
-
+                    <span class="tooltip-text-adress" role="tooltip" id="tooltip-label-adress">
+                      Введите название<br>улицы, дома и квартиры
                     </span>
                   </span>
                   <input class="form-input" id="adress-text" name="adress-text" type="text"
                     placeholder="ул. Большая Конюшенная, 19/8" required>
                 </p>
               </div>
-              <button class="button form-button" type="submit">
+              <button class="button subscription-button" type="submit">
                 Отправить
               </button>
             </form>
