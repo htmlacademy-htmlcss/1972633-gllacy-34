@@ -1055,6 +1055,14 @@ body {
   height: 507px;
 }
 
+.slider-container-img:hover .slider-image{
+    transform: scale(1.07);
+}
+
+.slider-image{
+  transition: 1.1s;
+}
+
 .slider-item:not(.slider-active) .slider-container-img {
   opacity: 0.4;
 }
@@ -1083,13 +1091,16 @@ body {
   object-fit: contain;
 }
 
+
 .blue .slider-container-img::after {
   background-color: rgba(159, 200, 255, 1);
 }
 
+
 .yellow .slider-container-img::after {
   background-color: rgba(252, 220, 146, 1);
 }
+
 
 .slider-controls {
   display: flex;
