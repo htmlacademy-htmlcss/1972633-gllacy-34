@@ -14,9 +14,9 @@
     <div class="container">
       <header class="page-header">
         <nav class="navigation">
-          <a class="navigation-logo" href="index.html">
+          <div class="navigation-logo">
             <img src="images/header/logo.svg" width="137" height="56" alt="Логотип gllacy.">
-          </a>
+          </div>
           <ul class="navigation-list">
             <li class="navigation-item navigation-item-popover">
               <!-- Для того, чтобы кнопка стала розового цвета, нужно добавить класс current для a navigation-link -->
@@ -77,11 +77,11 @@
               <!-- к div search-popover добавить класс active для появления поповера -->
               <div class="search-popover">
                 <form class="form-search-popover" action="https://echo.htmlacademy.ru" method="post">
-                  <label class="visually-hidden">
+                  <label class="visually-hidden" for="popover-search">
                     Поиск
                   </label>
                   <!-- К input добавить класс error для появления красной рамки -->
-                  <input class="input-search-popover input-fix" type="text" placeholder="Поиск по сайту">
+                  <input class="input-search-popover input-fix" id="popover-search" name="popover-search" type="text" placeholder="Поиск по сайту">
                   <button class="search-popover-reset" type="reset">
                     <svg class="search-popover-reset-icon" aria-hidden="true" focusable="false" width="10" height="10"
                       viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -158,7 +158,7 @@
                     <a href="catalog.html" class="basket-popover-products-link">
                       <div class="basket-popover-products-image">
                         <img class="popover-image" src="/images/popover/ice-1.jpg" width="46" height="46"
-                          alt="Мороженое малинка">
+                          alt="Мороженое малинка.">
                       </div>
                       <div class="basket-popover-products-wrapper">
                         <span class="popover-products-text">Малинка</span>
@@ -180,7 +180,7 @@
                     <a href="catalog.html" class="basket-popover-products-link">
                       <div class="basket-popover-products-image">
                         <img class="popover-image" src="/images/popover/ice-2.jpg" width="46" height="46"
-                          alt="Мороженое бабл-гам">
+                          alt="Мороженое бабл-гам.">
                       </div>
                       <div class="basket-popover-products-wrapper basket-popover-products-wrapper-bubble">
                         <span class="popover-products-text">Бабл-гам</span>
@@ -396,7 +396,7 @@
             <li class="popular-item">
               <div class="image-container">
                 <img class="popular-image" width="168" height="168" src="images/ices/ice-2.png"
-                  alt="Малиновое мороженое.">
+                  alt="Фисташковое мороженое.">
               </div>
               <h3 class="popular-item-title">
                 Фисташка
@@ -419,7 +419,7 @@
             <li class="popular-item">
               <div class="image-container">
                 <img class="popular-image" width="168" height="168" src="images/ices/ice-3.png"
-                  alt="Малиновое мороженое.">
+                  alt="Черничное мороженое.">
               </div>
               <h3 class="popular-item-title">
                 Черника
@@ -442,7 +442,7 @@
             <li class="popular-item">
               <div class="image-container">
                 <img class="popular-image" width="168" height="168" src="images/ices/ice-4.png"
-                  alt="Малиновое мороженое.">
+                  alt="Ванильное мороженое.">
               </div>
               <h3 class="popular-item-title">
                 Бабл-гам
